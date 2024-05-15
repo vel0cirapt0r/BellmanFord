@@ -160,4 +160,4 @@ cython_debug/
 .idea/
 
 .DS_Store
-whoosh_index/
+constants.py
