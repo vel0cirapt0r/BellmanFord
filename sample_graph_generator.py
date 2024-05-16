@@ -1,6 +1,9 @@
 import random
 
+from decorators import measure_time
 
+
+@measure_time
 def generate_graph(num_nodes=100, num_edges=300):
     # Generate random graph
     graph = {i: {} for i in range(1, num_nodes + 1)}
