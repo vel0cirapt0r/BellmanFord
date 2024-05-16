@@ -44,8 +44,8 @@ if __name__ == "__main__":
     parser = GraphParser()
     parsed_graph = parser.parse(folder_path)
 
-    # total_edges = sum(len(adjacent_vertices) for adjacent_vertices in parsed_graph['distance_edges'].values())
-    # print(len(parsed_graph['distance_edges']), total_edges)
+    total_edges = sum(len(adjacent_vertices) for adjacent_vertices in parsed_graph['distance_edges'].values())
+    print('number of nodes: ', len(parsed_graph['distance_edges']), 'number of edges: ', total_edges)
 
     # graph = generate_graph(20, 95)
     # print("generated graph: ", graph)
